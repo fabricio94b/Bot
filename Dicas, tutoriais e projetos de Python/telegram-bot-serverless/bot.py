@@ -5,7 +5,7 @@ from config import TELEGRAM_TOKEN
 from handlers import search_movie, start, unknown
 
 
-bot = Bot(token=TELEGRAM_TOKEN)
+bot = Bot(token="1525249927:AAHYmZn46ptgnx6jYgVApW8ofbQs8imzPvI")
 dispatcher = Dispatcher(bot, None, use_context=True)
 dispatcher.add_handler(CommandHandler("start", start))
 dispatcher.add_handler(MessageHandler(Filters.text & (~Filters.command), search_movie))
